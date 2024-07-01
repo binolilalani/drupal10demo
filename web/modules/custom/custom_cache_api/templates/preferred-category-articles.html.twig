@@ -1,0 +1,17 @@
+{#
+  Custom template for the Preferred Category Articles block.
+#}
+
+<div class="preferred-category-articles">
+  {% if items %}
+    <ul>
+      {% for item in items %}
+        <li>
+          <a href=" {{ path('entity.node.canonical', {'node': item['#node'].id}) }}">{{ item['#node'].title.value }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No articles available in your preferred category.</p>
+  {% endif %}
+</div>

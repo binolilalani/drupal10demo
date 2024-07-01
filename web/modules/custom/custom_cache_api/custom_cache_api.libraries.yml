@@ -1,0 +1,4 @@
+cache_api_block:
+  css:
+    theme:
+      libraries/css/cache_api_block.css: {}

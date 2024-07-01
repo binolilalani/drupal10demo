@@ -1,0 +1,8 @@
+<div class = 'article-data'>
+  <ul>
+    {% for key,article_title in article_data %}
+     <li>{{ article_title }}</li>
+  {% endfor%}
+  </ul>
+  <div class='current-user-email'>{{ 'Your email address is: ' }}{{ current_user_email }}</div>
+</div>

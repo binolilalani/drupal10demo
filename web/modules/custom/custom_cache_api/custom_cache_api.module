@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Custom Cache API module file.
+ */
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for block templates.
+ */
+function custom_cache_api_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+  $block = $variables['elements']['#id'];
+  if ($block === 'preferred_category_articles_block') {
+    $suggestions[] = 'block__preferred_category_articles';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_cache_api_theme() {
+  return [
+    'preferred_category_articles' => [
+      'variables' => [
+        'items' => NULL,
+      ],
+      'template' => 'preferred-category-articles', // Template file name without .html.twig extension
+    ],
+    'latest_article_data' => [
+      'variables' => [
+        'article_data' => [],
+        'current_user_email' => '',
+      ],
+    ],
+  ];
+}

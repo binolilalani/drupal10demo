@@ -1,0 +1,25 @@
+uuid: ddded2ca-0069-44f6-9616-6a41a7e4dd16
+langcode: en
+status: true
+dependencies: {  }
+id: c819df438e
+name: 'Varnish Demo'
+invalidationtype: tag
+hostname: 'https://drupal10demo.ddev.site'
+port: 80
+path: /
+request_method: BAN
+scheme: http
+verify: '1'
+headers:
+  -
+    field: Purge-Cache-Tags
+    value: '[invalidation:expression]'
+body: null
+body_content_type: null
+runtime_measurement: true
+timeout: 1.0
+connect_timeout: 1.0
+cooldown_time: 0.0
+max_requests: 100
+http_errors: true

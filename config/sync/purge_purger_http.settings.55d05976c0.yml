@@ -1,0 +1,26 @@
+uuid: 801f1be3-a861-4211-aea7-b924e404d33b
+langcode: en
+status: true
+dependencies: {  }
+label: null
+id: 55d05976c0
+name: 'Varnish HTTP Everything'
+invalidationtype: everything
+hostname: 'https://drupal10demo.ddev.site'
+port: 80
+path: /
+request_method: BAN
+scheme: http
+verify: true
+headers:
+  -
+    field: Purge-Cache-Tags
+    value: '*'
+body: ''
+body_content_type: text/plain
+runtime_measurement: true
+timeout: 1.0
+connect_timeout: 1.0
+cooldown_time: 0.0
+max_requests: 100
+http_errors: true

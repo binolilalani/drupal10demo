@@ -1,0 +1,20 @@
+uuid: 13fd6b8b-f623-4c6a-b8e2-b41f112bbde0
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_cache_api
+  theme:
+    - olivero
+id: olivero_preferredcategoryarticlesblock
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: preferred_category_articles_block
+settings:
+  id: preferred_category_articles_block
+  label: 'Preferred Category Articles Block'
+  label_display: visible
+  provider: custom_cache_api
+visibility: {  }

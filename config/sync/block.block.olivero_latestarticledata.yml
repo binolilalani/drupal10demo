@@ -1,0 +1,20 @@
+uuid: ec9b84f3-2316-49df-bb28-de097bae6407
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_cache_api
+  theme:
+    - olivero
+id: olivero_latestarticledata
+theme: olivero
+region: content
+weight: -6
+provider: null
+plugin: custom_cache_api_tags
+settings:
+  id: custom_cache_api_tags
+  label: 'Latest Article Data'
+  label_display: visible
+  provider: custom_cache_api
+visibility: {  }

@@ -1,0 +1,6 @@
+name: 'Custom Cache API'
+type: module
+description: 'Render contents from cache API.'
+core: 10.x
+core_version_requirement: ^10
+package: 'Custom'
